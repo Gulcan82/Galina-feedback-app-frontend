@@ -4,14 +4,32 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+/**
+ * Das Root-Element, in dem die React-App gerendert wird.
+ * 
+ * @const {HTMLElement} root - Das DOM-Element, in dem die App angezeigt wird.
+ */
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+/**
+ * Rendert die Haupt-App-Komponente im `root`-Element.
+ * 
+ * @function render
+ * @memberof root
+ * @description React.StrictMode ist eine Entwicklungsfunktion, die hilft, potenzielle Probleme in der App zu erkennen.
+ */
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+/**
+ * Funktion zur Messung der Performance der App.
+ * 
+ * @function reportWebVitals
+ * @param {Function} [console.log] - Optional kann eine Funktion übergeben werden, um die Ergebnisse zu loggen.
+ * @description Wenn du die Performance deiner App messen möchtest, kannst du `reportWebVitals(console.log)` oder
+ * eine eigene Analyselösung angeben, um die Ergebnisse zu analysieren.
+ */
 reportWebVitals();
